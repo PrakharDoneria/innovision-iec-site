@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; }
+.glass-header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid #e2e8f0; }
+
+.filter-opt {
+    background-color: white; padding: 0.8rem 1rem; border-radius: 1rem;
+    font-size: 0.875rem; border: 1px solid #e2e8f0; outline: none;
+    cursor: pointer; appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394a3b8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 1rem center; background-size: 1rem;
+}
+
+.card {
+    background: white; padding: 1.5rem; border-radius: 2rem;
+    border: 1px solid #f1f5f9; box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px -5px rgba(0,0,0,0.06);
+}
+
+/* Styled Report Button in Footer */
+.report-button {
+    background-color: #f1f5f9;
+    color: #64748b;
+    padding: 8px 16px;
+    border-radius: 99px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.report-button:hover {
+    background-color: #eef2ff;
+    color: #4f46e5;
+    border-color: #e0e7ff;
+    transform: translateY(-1px);
+}
+
+.report-button:active {
+    transform: scale(0.95);
+}
