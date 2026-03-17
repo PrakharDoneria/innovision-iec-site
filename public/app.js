@@ -24,7 +24,7 @@ function toggleLoading(isLoading) {
 async function init() {
     toggleLoading(true);
     try {
-        const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTs559uYydPkBLMcdm4iNPJTU_LFJOMLfRo35B4ft4OFIr1rsDWM3gFhV_wa5Y70Pk3oZ2-wXBZ_4s4/pub?gid=83722819&single=true&output=csv';
+        const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTp6SHfdYUJGmISGQTTmY68pPjzzlHZ4qqQGlqVFO9ldDDHUMvDNfwp810cPMRgQyR02DuK1RlkEMMe/pub?gid=1543033244&single=true&output=csv';
         const response = await fetch(`${sheetUrl}&t=${Date.now()}`);
         const csvText = await response.text();
         
